@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [](https://up.htmlacademy.ru/htmlcss/33/user/1932829).
+* Студент: [Дарья](https://up.htmlacademy.ru/htmlcss/33/user/1932829).
 * Наставник: `Надя Дегтярёва`.
 
 ---
