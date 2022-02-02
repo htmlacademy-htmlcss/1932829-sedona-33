@@ -40,3 +40,12 @@ body {
   background-color: #756257;
   border-radius: 4px;
 }
+.tagline{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
