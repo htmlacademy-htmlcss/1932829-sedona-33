@@ -49,3 +49,40 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.subtitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantages-comment, .numbering, .advantages-title{
+  text-align: center;
+}
+
+.advantages-title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.advantages-list, .advantages-items{
+  list-style: none;
+}
+.search-hostel h2{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.search-hostel p{
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
