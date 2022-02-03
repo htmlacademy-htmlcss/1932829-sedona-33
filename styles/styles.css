@@ -88,7 +88,6 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756257;
@@ -326,4 +325,25 @@ product-price{
 .advantages-item:nth-child(5){
   color: #ffffff;
   background-color:rgba(131, 179, 211, 0.12);
+}
+
+.appointment{
+  background-image: url(../images/background-mailing.jpg);
+  background-color: #708090;
+  background-repeat: no-repeat;
+}
+
+.social-twitter{
+  background-image: url(../images/twitter-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.social-facebook{
+  background-image: url(../images/facebook-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.social-youtube{
+  background-image: url(../images/youtube-logo.svg);
+  background-repeat: no-repeat;
 }
