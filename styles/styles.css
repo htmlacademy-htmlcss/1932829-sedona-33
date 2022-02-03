@@ -347,3 +347,9 @@ product-price{
   background-image: url(../images/youtube-logo.svg);
   background-repeat: no-repeat;
 }
+
+.catalog-control{
+  background-image: url(../images/catalog-background.jpg);
+  background-repeat: no-repeat;
+  background-color: #708090;
+}
