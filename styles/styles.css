@@ -39,13 +39,47 @@ body {
   background-color: #756257;
   border-radius: 4px;
 }
+
+.application,
+.search-hostel a,
+.appointment h2,
+.appointment p,
+.button-email,
+.catalog-control h1,
+.breadcrumbs-item,
+.control,
+.catalog-filter button[type=submit],
+.catalog-filter button[type=reset],
+.product-card-button,
+.favourites,
+.more-products,
+.pagination-link,
+.advantages-container,
+.advantages-container .advantages-title,
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(2) h3,
+.catalog-filter-title{
+  color:#FFFFFF;
+}
+
+.tagline, 
+.advantages-title, 
+.search-hostel h2,
+.footer-phone a,
+.search-result h2,
+.product-card-title h3,
+.product-type,
+.product-price,
+.current-pagination-link{
+  color: #000000;
+}
+
 .tagline {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .subtitle {
@@ -66,7 +100,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
 }
 .advantages-list, .advantages-items {
   list-style: none;
@@ -77,7 +110,6 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
 }
 .search-hostel p {
   font-weight: normal;
@@ -91,7 +123,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
   background-color: #756257;
   border-radius: 10px;
   border: none;
@@ -104,21 +135,18 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .appointment p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
 }
 .button-email {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   border: none;
@@ -128,7 +156,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  color: #000000;
+  text-decoration: none;
 }
 
 .footer-phone {
@@ -139,33 +167,29 @@ body {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
 }
 
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
 }
 
 .catalog-filter-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  color: #FFFFFF;
+
 }
 
 .control {
   font-size: 18px;
-line-height: 23px;
-color: #FFFFFF;
+  line-height: 23px;
 }
 
 .catalog-filter button[type=submit] {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
   border: none;
@@ -174,7 +198,6 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: #FFFFFF;
   border: none;
 }
 
@@ -183,28 +206,24 @@ color: #FFFFFF;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .select-control .option {
   font-size: 18px;
   line-height: 23px;
-  color: #333333;
 }
 
 .product-card-link {
   text-decoration: none;
-  color: #333333;
 }
 
 .product-card-title h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
 }
 
-.produkt-type {
+.product-type {
   font-size: 18px;
   line-height: 23px;
 }
@@ -219,7 +238,6 @@ product-price {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
   background: #756257;
   border-radius: 4px;
   text-decoration: none;
@@ -230,7 +248,6 @@ product-price {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
   background: #83B3D3;
   border-radius: 4px;
   border: none;
@@ -240,14 +257,12 @@ product-price {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
 }
 .more-products {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
   background: #83B3D3;
   border-radius: 4px;
   border: none;
@@ -258,7 +273,6 @@ product-price {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
@@ -271,7 +285,6 @@ product-price {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
   background: #F2F2F2;
   border-radius: 4px;
   text-decoration: none;
@@ -280,59 +293,58 @@ product-price {
 .items-on-page label {
   font-size: 18px;
   line-height: 23px;
-  color: #333333;
 }
 
 .welcome-title {
   background-image:url("../images/index-background.jpg");
+  height: 485px;
   background-repeat: no-repeat;
 }
 
 .advantages-container {
-  color: #ffffff;
   background-color: #83B3D3}
 
 .advantages-item-content:first-child {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-1.svg");
   background-repeat:no-repeat;
+  background-position: 50% 0;
 }
 
 .advantages-item-content:nth-child(2){
   background-image:url("../images/icon-2.svg");
   background-repeat:no-repeat;
+  background-position: 50% 0;
 }
 
 .advantages-item-content:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-3.svg");
   background-repeat:no-repeat;
+  background-position: 50% 0;
 }
 
 .advantages-item:nth-child(2) {
-  color: #ffffff;
   background-color: #83B3D3;
 }
 
 .advantages-item:nth-child(3) {
-  color: #ffffff;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item:nth-child(4) {
-  color: #ffffff;
   background-color:rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item:nth-child(5) {
-  color: #ffffff;
-  background-color:rgba(131, 179, 211, 0.12);
+  background-color:rgba(131, 179, 211, 0.12); 
 }
 
 .appointment {
   background-image: url(../images/background-mailing.jpg);
   background-color: #708090;
   background-repeat: no-repeat;
+  height: 411px;
 }
 
 .social-twitter {
