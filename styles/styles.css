@@ -22,13 +22,13 @@ body {
     color:#333333;
   }
 
-.navigation-list{
+.navigation-list {
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
     line-height: 26px;
 }
-.application{
+.application {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +39,7 @@ body {
   background-color: #756257;
   border-radius: 4px;
 }
-.tagline{
+.tagline {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -48,28 +48,30 @@ body {
   color: #000000;
 }
 
-.subtitle{
+.subtitle {
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
 }
 
-.advantages-comment, .numbering, .advantages-title{
+.advantages-comment, 
+.numbering, 
+.advantages-title {
   text-align: center;
 }
 
-.advantages-title{
+.advantages-title {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
 }
-.advantages-list, .advantages-items{
+.advantages-list, .advantages-items {
   list-style: none;
 }
-.search-hostel h2{
+.search-hostel h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -77,14 +79,14 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
-.search-hostel p{
+.search-hostel p {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.search-hostel a{
+.search-hostel a {
   font-weight: bold;
   font-size: 20px;
   line-height: 36px;
@@ -96,7 +98,7 @@ body {
   text-decoration: none;
 }
 
-.appointment h2{
+.appointment h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -105,13 +107,13 @@ body {
   color: #FFFFFF;
 }
 
-.appointment p{
+.appointment p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
 }
-.button-email{
+.button-email {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -122,44 +124,44 @@ body {
   border: none;
 }
 
-.footer-phone a{ 
+.footer-phone a { 
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.footer-phone{
+.footer-phone {
   text-align: center;
 }
 
-.catalog-control h1{
+.catalog-control h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
 }
 
-.breadcrumbs-item{
+.breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
 }
 
-.catalog-filter-title{
+.catalog-filter-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
 }
 
-.control{
+.control {
   font-size: 18px;
 line-height: 23px;
 color: #FFFFFF;
 }
 
-.catalog-filter button[type=submit]{
+.catalog-filter button[type=submit] {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
@@ -168,7 +170,7 @@ color: #FFFFFF;
   border-radius: 4px;
   border: none;
 }
-.catalog-filter button[type=reset]{
+.catalog-filter button[type=reset] {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
@@ -176,7 +178,7 @@ color: #FFFFFF;
   border: none;
 }
 
-.search-result h2{
+.search-result h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
@@ -184,35 +186,35 @@ color: #FFFFFF;
   color: #000000;
 }
 
-.select-control .option{
+.select-control .option {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
-.product-card-link{
+.product-card-link {
   text-decoration: none;
   color: #333333;
 }
 
-.product-card-title h3{
+.product-card-title h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
 
-.produkt-type{
+.produkt-type {
   font-size: 18px;
   line-height: 23px;
 }
 
-product-price{
+product-price {
   font-size: 18px;
   line-height: 23px;
 }
 
-.product-card-button{
+.product-card-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -222,7 +224,7 @@ product-price{
   border-radius: 4px;
   text-decoration: none;
 }
-.favourites{
+.favourites {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -234,13 +236,13 @@ product-price{
   border: none;
 }
 
-.user-rating{
+.user-rating {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
 }
-.more-products{
+.more-products {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -251,7 +253,7 @@ product-price{
   border: none;
   text-decoration: none;
 }
-.pagination-link{
+.pagination-link {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -262,7 +264,7 @@ product-price{
   text-decoration: none;
 }
 
-.current-pagination-link{
+.current-pagination-link {
   font-size: 20px;
   line-height: 26px;
   display: flex;
@@ -275,22 +277,22 @@ product-price{
   text-decoration: none;
 }
 
-.items-on-page label{
+.items-on-page label {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
-.welcome-title{
+.welcome-title {
   background-image:url("../images/index-background.jpg");
   background-repeat: no-repeat;
 }
 
-.advantages-container{
+.advantages-container {
   color: #ffffff;
   background-color: #83B3D3}
 
-.advantages-item-content:first-child{
+.advantages-item-content:first-child {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-1.svg");
   background-repeat:no-repeat;
@@ -301,54 +303,54 @@ product-price{
   background-repeat:no-repeat;
 }
 
-.advantages-item-content:nth-child(3){
+.advantages-item-content:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-3.svg");
   background-repeat:no-repeat;
 }
 
-.advantages-item:nth-child(2){
+.advantages-item:nth-child(2) {
   color: #ffffff;
   background-color: #83B3D3;
 }
 
-.advantages-item:nth-child(3){
+.advantages-item:nth-child(3) {
   color: #ffffff;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(4){
+.advantages-item:nth-child(4) {
   color: #ffffff;
   background-color:rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:nth-child(5){
+.advantages-item:nth-child(5) {
   color: #ffffff;
   background-color:rgba(131, 179, 211, 0.12);
 }
 
-.appointment{
+.appointment {
   background-image: url(../images/background-mailing.jpg);
   background-color: #708090;
   background-repeat: no-repeat;
 }
 
-.social-twitter{
+.social-twitter {
   background-image: url(../images/twitter-logo.svg);
   background-repeat: no-repeat;
 }
 
-.social-facebook{
+.social-facebook {
   background-image: url(../images/facebook-logo.svg);
   background-repeat: no-repeat;
 }
 
-.social-youtube{
+.social-youtube {
   background-image: url(../images/youtube-logo.svg);
   background-repeat: no-repeat;
 }
 
-.catalog-control{
+.catalog-control {
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-color: #708090;
