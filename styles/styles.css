@@ -38,6 +38,8 @@ body {
 }
 
 .main-container {
+  width: 1200px;
+  margin: 0 auto;
   flex-grow: 1;
 }
 
@@ -62,7 +64,7 @@ body {
   margin-left: auto;
 }
 
-.page-container{
+main-container{
 width: 1200px;
 margin: 0 auto;
 }
@@ -113,6 +115,11 @@ margin: 0 auto;
   color: #000000;
 }
 
+.advantages-section{
+margin:0;
+padding: 0;
+}
+
 .tagline {
   font-weight: bold;
   font-size: 30px;
@@ -142,7 +149,14 @@ margin: 0 auto;
 }
 .advantages-list, .advantages-items {
   list-style: none;
+  margin: 0px;
+  padding:0px;
 }
+
+.advantages-text-element{
+margin:auto;
+}
+
 .search-hostel h2 {
   font-weight: bold;
   font-size: 30px;
@@ -341,7 +355,11 @@ product-price {
 }
 
 .advantages-container {
-  background-color: #83B3D3}
+  display: flex;
+  width: 1200px;
+  background-color: #83B3D3;
+  margin: 0 auto;
+}
 
 .advantages-item-content:first-child {
   background-color: rgba(131, 179, 211, 0.12);
