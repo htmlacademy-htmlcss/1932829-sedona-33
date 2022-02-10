@@ -20,6 +20,7 @@ html{
 
 body {
     margin:0px;
+    padding:0px;
     display:flex;
     flex-direction: column;
     min-height: 100%;
@@ -30,11 +31,23 @@ body {
     color:#333333;
   }
 
+.main-navigation{
+  display: flex;
+  width:1060px;
+  margin:0 auto;
+}
+
+.main-header{
+  width: 1200px;
+  margin:auto;
+}
+
 .navigation-list {
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
     line-height: 26px;
+    width: 450px;
 }
 
 .main-container {
@@ -43,20 +56,14 @@ body {
   flex-grow: 1;
 }
 
-.main-navigation{
-  display:flex;
-  width:1060px;
-  margin:0 auto;
+.main-inner{
+  width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
 }
 
 .logo{
   margin-right:30px;
-}
-
-.navigation-list{
-  width: 450px;
-  margin: 0;
-  padding: 0;
 }
 
 .user-navigation{
@@ -97,8 +104,6 @@ margin: 0 auto;
 .pagination-link,
 .advantages-container,
 .advantages-container .advantages-title,
-.advantages-item:nth-child(2),
-.advantages-item:nth-child(2) h3,
 .catalog-filter-title{
   color:#FFFFFF;
 }
@@ -115,6 +120,10 @@ margin: 0 auto;
   color: #000000;
 }
 
+.welcome-title{
+  min-height: 767px;
+}
+
 .advantages-section{
 margin:0;
 padding: 0;
@@ -126,6 +135,7 @@ padding: 0;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 548px;
 }
 
 .subtitle {
@@ -157,18 +167,41 @@ padding: 0;
 margin:auto;
 }
 
+.advantages-items{
+  display:flex;
+  height: 384px;
+} 
+
+.search-hostel{
+  min-height: 417px;
+}
+
 .search-hostel h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 91px auto 0px;
 }
-.search-hostel p {
+.search-title {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 29px auto 0px;
+  width: 720px;
+}
+
+.search-button{
+  width:575px;
+  height: 60px;
+  background-color: #756257;
+  border-radius: 10px;
+  border: none;
+  margin:85px auto 93px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .search-hostel a {
@@ -176,10 +209,12 @@ margin:auto;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #756257;
-  border-radius: 10px;
-  border: none;
   text-decoration: none;
+}
+.appointment::before {
+  content: "";
+  overflow: hidden;
+  display: block;
 }
 
 .appointment h2 {
@@ -188,13 +223,29 @@ margin:auto;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 94px;
 }
 
 .appointment p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-top: 29px;
 }
+
+.appointment-form{
+  display: flex;
+}
+
+input[type="email"]{
+  margin-left:200px;
+  padding:0px;
+  width: 600px;
+  height: 60px;
+  border:none;
+  border-radius: 10px 0px 0px 10px;
+}
+
 .button-email {
   font-size: 20px;
   line-height: 26px;
@@ -203,28 +254,26 @@ margin:auto;
   background-color: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   border: none;
+  margin-right:200px;
+  padding:0px;
+  width: 200px;
+  height: 60px;
 }
 
-.footer-phone a { 
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.footer-phone {
-  text-align: center;
+.catalog-control::before {
+  content: "";
+  overflow: hidden;
+  display: block;
 }
 
 .catalog-control h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
-}
-
-.breadcrumbs-item {
-  font-size: 16px;
-  line-height: 21px;
+  margin-top:35px;
+  margin-left:71px;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .catalog-filter-title {
@@ -360,40 +409,41 @@ product-price {
   background-color: #83B3D3;
   margin: 0 auto;
 }
+.advantages-item-content {
+  width: 400px;
+}
+
 
 .advantages-item-content:first-child {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-1.svg");
   background-repeat:no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 30%;
 }
 
 .advantages-item-content:nth-child(2){
   background-image:url("../images/icon-2.svg");
   background-repeat:no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 30%;
 }
 
 .advantages-item-content:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-3.svg");
   background-repeat:no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 30%;
 }
 
-.advantages-item:nth-child(2) {
-  background-color: #83B3D3;
-}
 
-.advantages-item:nth-child(3) {
+.advantages-items .advantages-item:nth-child(1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(4) {
+.advantages-items .advantages-item:nth-child(2) {
   background-color:rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:nth-child(5) {
+.advantages-items .advantages-item:nth-child(3) {
   background-color:rgba(131, 179, 211, 0.12); 
 }
 
@@ -423,4 +473,86 @@ product-price {
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-color: #708090;
+}
+
+.main-footer {
+  display:flex;
+  justify-content:space-between;
+  min-height: 120px;
+  width: 1200px;
+  margin:auto;
+}
+
+.footer-phone { 
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin-top:40px;
+}
+
+.academy-logo{
+  width: 115;
+  height: 33;
+  margin-top:42px;
+  margin-right:72px;
+}
+
+.footer-social{
+  margin-top:49px;
+  margin-left:72px;
+}
+
+.breadcrumbs-list{
+  display: flex;
+  width: 150px;
+  margin:0px 0 10px 73px;
+  padding: 0px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+  margin-right: 10px;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+.catalog-filter-group{
+  border:none;
+}
+
+.button-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.search-header{
+  display:flex;
+  width: 1060px;
+  margin:0 auto;
+  justify-content: space-between;
+}
+.search-setting{
+  display:flex;
+  justify-content: space-between;
+  min-width: 528px;
+  margin-right:0px;
+  margin-top: 44px;
+}
+.select-control{
+  width: 287px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.product-list{
+  width:1056px;
+  margin: 0 auto;
 }
