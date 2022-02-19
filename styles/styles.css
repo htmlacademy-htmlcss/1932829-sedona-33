@@ -347,7 +347,7 @@ margin:auto;
   min-height: 408px;
 }
 
-.catalog-filter-conteiner{
+.catalog-filter-container{
   display: flex;
   justify-content: flex-start;
   width: 480px;
@@ -449,12 +449,11 @@ product-price {
   text-decoration: none;
 }
 
-.diviver{
-  background-image: url(../images/divider.svg);
-  background-repeat: no-repeat;
+.divider{
   width: 1055px;
-  height: 4px;
-  margin:auto;
+  height: 120px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom:1px solid #E5E5E5
 }
 
 .pagination-section{
