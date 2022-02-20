@@ -390,18 +390,36 @@ margin:auto;
 }
 
 .product-card-link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
 
+.product-image{
+  display: block;
+  height: 206px;
+  margin-bottom: 16px;
+}
+
+.product-data {
+  display:flex;
+  margin-bottom: 16px;
+}
+
 .product-card-title h3 {
+  width: 300px;
+  height: 31px; 
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
+  margin-bottom: 16px;
 }
 
 .product-type {
   font-size: 18px;
   line-height: 23px;
+  width: 133px;
+  margin-right: 25px;
 }
 
 product-price {
@@ -409,7 +427,18 @@ product-price {
   line-height: 23px;
 }
 
+.card-option{
+  display:flex;
+  margin-bottom: 16px;
+}
+
 .product-card-button {
+  display:flex;
+  width: 133px;
+  height: 37px;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -418,8 +447,34 @@ product-price {
   border-radius: 4px;
   text-decoration: none;
 }
+
+.product-card{
+  display: flex;
+  width: 340px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list{
+  width:1056px;
+  margin: 0 auto 34px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 340px); 
+  gap: 18px; 
+}
+
+.product-rating{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 37px;
+  margin-bottom: 20px;
+}
+
 .favourites {
   font-weight: bold;
+  width: 141px;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -430,10 +485,18 @@ product-price {
 }
 
 .user-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  width: 160px;
+  height: 37px;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
 }
+
+
 .more-products {
   display:block;
   width: 616px;
@@ -453,7 +516,8 @@ product-price {
   width: 1055px;
   height: 120px;
   border-top: 1px solid #E5E5E5;
-  border-bottom:1px solid #E5E5E5
+  border-bottom:1px solid #E5E5E5;
+  margin-bottom: 30px;
 }
 
 .pagination-section{
@@ -512,7 +576,16 @@ margin-right:8px;
 .items-on-page label {
   font-size: 18px;
   line-height: 23px;
+  margin-right:51px;
 }
+
+.cards-on-page-control{
+  width: 160px;
+  height:48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
 
 .welcome-title::before{
   content: "";
@@ -577,7 +650,6 @@ margin-right:8px;
 
 .appointment {
   width: 1200px;
-  min-height: 411px;
   background-image: url(../images/background-mailing.jpg);
   background-color: #708090;
   background-repeat: no-repeat;
@@ -587,6 +659,13 @@ margin-right:8px;
 .transparent{
   background-image: none;
   background-color: #FFFFFF;
+  margin-bottom: 141px;
+}
+
+.transparent p{
+  color:#000000;
+  width: 520px;
+  margin:auto;
 }
 
 .appointment::before {
@@ -601,14 +680,15 @@ margin-right:8px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 94px;
+  color:#000000;
+  margin:0 auto 46px auto;
 }
 
 .appointment p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-top: 29px;
+  margin-bottom: 46px;
 }
 
 .appointment-form{
@@ -783,7 +863,6 @@ input[type="email"]{
 
 .view-list{
   display:flex;
-
 }
 
 .view-item button{
@@ -814,11 +893,6 @@ input[type="email"]{
 
 [name="tile"]{
   background-image: url(../images/icon-tile.svg);
-}
-
-.product-list{
-  width:1056px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
