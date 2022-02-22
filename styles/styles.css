@@ -662,13 +662,32 @@ margin-right:8px;
   margin-bottom: 141px;
 }
 
+.transparent h2{
+  font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 auto 46px auto;
+}
+
 .transparent p{
   color:#000000;
   width: 520px;
-  margin:auto;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 46px auto;
 }
 
 .appointment::before {
+  content: "";
+  overflow: hidden;
+  display: block;
+}
+
+.appointment::after {
   content: "";
   overflow: hidden;
   display: block;
@@ -679,9 +698,9 @@ margin-right:8px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  color:#FFFFFF;
   text-transform: uppercase;
-  color:#000000;
-  margin:0 auto 46px auto;
+  margin:94px auto 46px auto;
 }
 
 .appointment p {
@@ -693,6 +712,7 @@ margin-right:8px;
 
 .appointment-form{
   display: flex;
+  margin-bottom:93px;
 }
 
 input[type="email"]{
