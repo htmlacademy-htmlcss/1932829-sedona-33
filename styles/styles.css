@@ -549,7 +549,7 @@ product-price {
 .pagination-link {
   display: block;
   text-decoration: none;
-  padding: 5px;
+  padding: 10px 15px 10px 15px;
   margin:auto;
 }
 
