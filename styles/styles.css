@@ -188,12 +188,13 @@ padding: 0;
 }
 
 .title {
+  width: 720px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 145px;
+  margin: 145px auto auto auto;
 }
 
 .subtitle {
@@ -201,6 +202,7 @@ padding: 0;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  margin: 31px auto 80px auto;
 }
 
 .advantages-comment, 
@@ -235,7 +237,7 @@ padding: 0;
 }
 
 .advantages-text-element{
-margin:auto;
+margin: 0 auto auto auto;
 }
 
 .advantages-items{
@@ -598,7 +600,6 @@ margin-right:8px;
   background-image:url("../images/index-background.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
-  min-height: 767px;
 }
 
 .advantages-container {
