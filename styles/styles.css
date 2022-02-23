@@ -45,6 +45,7 @@ ul{
 .main-header{
   width: 1200px;
   margin:auto;
+  margin-bottom: -15px;
 }
 
 .welcome-lettering{
@@ -123,6 +124,7 @@ background-position: center;
 
 .logo{
   margin-right:37px;
+  z-index: 1;
 }
 
 .user-navigation{
