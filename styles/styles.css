@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -21,6 +21,7 @@ html{
   body{
     background-color: #E5E5E5;
     width: 1315px;
+    height: 100%;
     margin: auto;
   }
 
@@ -53,13 +54,13 @@ ul{
 .main-header{
   width: 1200px;
   margin:auto;
-  margin-bottom: -10px;
+  margin-bottom: -9px;
 }
 
 .welcome-lettering{
   width: 1200px;
   min-height: 352px;
-  margin: 50px auto;
+  margin: 51px auto;
   background-image: url("../images/welcome.svg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -74,6 +75,10 @@ ul{
     flex-wrap: wrap; 
 }
 
+.navigation-list a{
+    margin:20px 17px auto 17px;
+}
+
 .navigation-item a{
   font-family: PT Sans, sans-serif;
   font-size: 20px;
@@ -83,7 +88,6 @@ ul{
   letter-spacing: 0px;
   text-align: left;
   display: block;
-  padding:17px;
   color: #000000;
   text-decoration: none;
 }
@@ -93,14 +97,15 @@ background-image: url(../images/search.svg);
 background-size: 18px;
 background-repeat: no-repeat;
 background-position: center;
+margin-right: 45px;
 }
 
 .user-navigation .navigation-item:nth-last-child(2){
   background-image: url(../images/favorite.svg);
-  background-size: 18px;
+  background-size: 19px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 26px;
+  margin-right: 32px;
 }
 
 .likes {
@@ -115,8 +120,8 @@ background-position: center;
   border-radius: 50%;
   background-color: #7DB54F;
   position: relative;
-  bottom: 8px;
-  left:12px;
+  bottom:7px;
+  left:13px;
 }
 
 .main-container {
@@ -124,8 +129,6 @@ background-position: center;
   margin: auto;
   flex-grow: 1;
 }
-
-
 
 .main-inner{
   width: 1200px;
@@ -145,6 +148,7 @@ background-position: center;
   margin-left:auto;
   list-style-type: none;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .navigation-item .application {
@@ -157,7 +161,8 @@ background-position: center;
   color:#FFFFFF;
   background-color: #756257;
   border-radius: 4px;
-  padding: 9px 28px 8px 27px;
+  width: 160px;
+  padding: 9px 0 8px 0;
 }
 
 .application,
@@ -283,7 +288,7 @@ margin: 0 auto auto auto;
   background-color: #756257;
   border-radius: 10px;
   border: none;
-  margin:56px auto 93px;
+  margin:55px auto 93px;
   text-align: center;
   vertical-align: middle;
 }
@@ -334,6 +339,7 @@ margin: 0 auto auto auto;
 }
 
 .catalog-filter button[type=submit] {
+  font-family: "PT Sans", sans-serif;
   width: 160px;
   height: 48px;
   font-size: 16px;
@@ -366,6 +372,7 @@ margin: 0 auto auto auto;
   display: flex;
   justify-content: flex-start;
   width: 480px;
+
   
 }
 
@@ -373,7 +380,7 @@ margin: 0 auto auto auto;
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  margin: 35px auto;
+  margin: 40px auto;
 }
 .catalog-filter-group{
   border:none;
@@ -382,7 +389,7 @@ margin: 0 auto auto auto;
 }
 
 .catalog-filter-group:not(:last-child){
-  margin-right: 67px;
+  margin-right: 62px;
 }
 
 .catalog-filter-item{
@@ -408,6 +415,7 @@ margin: 0 auto auto auto;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  margin-top: 11px;
 }
 
 .product-image{
@@ -426,7 +434,7 @@ margin: 0 auto auto auto;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 
 .product-type {
@@ -487,6 +495,7 @@ product-price {
 }
 
 .favourites {
+  font-family: "PT Sans";
   font-weight: bold;
   width: 141px;
   font-size: 16px;
@@ -512,8 +521,9 @@ product-price {
 
 
 .more-products {
+  font-family: "PT Sans";
   display:block;
-  width: 616px;
+  width: 620px;
   height: 60px;
   font-size: 20px;
   line-height: 26px;
@@ -531,15 +541,15 @@ product-price {
   height: 120px;
   border-top: 1px solid #E5E5E5;
   border-bottom:1px solid #E5E5E5;
-  margin-bottom: 30px;
+  margin: 0 auto 0 auto;
 }
 
 .pagination-section{
   display: flex;
   justify-content: space-between;
-  width: 1060;
+  width: 1056px;
   height: 55px;
-  margin:30px auto 73px auto;
+  margin:28px auto 73px auto;
 }
 
 .pagination-list{
@@ -628,20 +638,20 @@ margin-right:8px;
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-1.svg");
   background-repeat:no-repeat;
-  background-position: 50% 30%;
+  background-position: 163px 89px;
 }
 
 .advantages-item-content:nth-child(2){
   background-image:url("../images/icon-2.svg");
   background-repeat:no-repeat;
-  background-position: 50% 30%;
+  background-position: 163px 91px;
 }
 
 .advantages-item-content:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.12);
   background-image:url("../images/icon-3.svg");
   background-repeat:no-repeat;
-  background-position: 50% 30%;
+  background-position: 168px 85px;
 }
 
 
@@ -700,6 +710,10 @@ margin-right:8px;
   display: block;
 }
 
+appointment-form label{
+  margin-left:23px;
+}
+
 .appointment::after {
   content: "";
   overflow: hidden;
@@ -713,14 +727,14 @@ margin-right:8px;
   text-align: center;
   color:#FFFFFF;
   text-transform: uppercase;
-  margin:94px auto 46px auto;
+  margin:95px auto 29px auto;
 }
 
 .appointment p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .appointment-form{
@@ -743,6 +757,7 @@ input[type="email"]{
 }
 
 .button-email {
+  font-family: PT Sans, sans-serif;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -772,6 +787,7 @@ input[type="email"]{
 .footer-phone { 
   text-align: center;
   margin-top:40px;
+  margin-right: 10px;
 }
 
 .footer-phone a{
@@ -829,24 +845,26 @@ input[type="email"]{
 .breadcrumbs-list{
   display: flex;
   width: 450px;
-  margin:0px 0 10px 73px;
+  margin: -12px 0 10px 73px;
   padding: 0px;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-item:not(:first-child) {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
   padding:5px;
-  margin-left:5px;
+  margin-left:2px;
+  margin-top: 2px;
 }
 
 
 .breadcrumbs-item:first-child{
+  list-style-type: none;
   background-image: url(../images/home-page.svg);
   background-repeat: no-repeat;
-  min-width: 20px;
-  min-height:20px;
+  min-width: 12px;
+  min-height:12px;
   background-position: 50% 50%;
 }
 
@@ -857,14 +875,21 @@ input[type="email"]{
   height: 8px;
   width: 5px;
   position: relative;
-  right: 7px;
+  right: 5px;
+  bottom:2px;
+  margin-left:10px;
 }
 
 .button-field{
   display: flex;
   flex-direction: column;
   min-height:100px;
-  margin-top:45px;
+  margin-top:60px;
+}
+
+.button-field .button{
+  margin-bottom:7px;
+  font-family: "PT Sans";
 }
 
 .search-header{
@@ -874,7 +899,7 @@ input[type="email"]{
   align-items: center;
   margin:0 auto;
   justify-content: space-between;
-  margin:44px auto 73px auto;
+  margin:46px auto 61px auto;
 }
 
 .search-setting{
@@ -940,14 +965,3 @@ input[type="email"]{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/*
-1. Не знаю что делать с карточками, ссылка с фото не ужимается по img, 
-к 206px добавляется еще 4, пришлось поставить height=206px в .product-image, а это не оч хорошо.
-2. Как сделать название отеля перносимым? Для него только одна строчка.
- Как выполнить здесь переполнение? Все рассыпется, если в Седоне построят отель с длинным названием.
-3. Ума не приложу, как ставить звезды.
-4. Мусорные теги, которые я нашла   <ul class="catalog-filter-list">,  search-result,  
- <div class="view-group">(удалила), product-card-title, items-on-page, cards-on-page-control, 
- search-hostel не имеет стилей.
-5. Не знаю, как стилизовать   cards-on-page-control.*/
