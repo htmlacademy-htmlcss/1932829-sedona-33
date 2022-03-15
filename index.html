@@ -125,5 +125,51 @@
       </div>
     </footer>
   </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="modal-form-group">
+              <legend class="visually-hidden">Параметры поиска</legend>
+              <ul class="modal-form-list">
+                <li class="modal-form-item">
+                  <label class="modal-form-check">
+                    <span>Дата заезда:</span>
+                    <input class="form-input form-input-top" type="date" id="start" name="trip-start" value="27 04 2020">
+                  </label>
+                </li>
+                <li class="modal-form-item">
+                  <label class="modal-form-check">
+                    <span>Дата выезда:</span>
+                    <input class="form-input form-input-top" type="date" id="departure" name="trip-end" value="1 09 2021">
+                  </label>
+                </li>
+                <ul class="modal-form-guest">
+                  <li class="modal-form-item">
+                    <label class="modal-form-check">
+                      <span>Взрослые:</span>
+                      <input class="form-input form-input-bottom" type="number" id="adults" name="adults">
+                    </label>
+                  </li>
+                  <li class="modal-form-item">
+                    <label class="modal-form-check">
+                      <span>Дети:</span>
+                      <input class="form-input form-input-bottom" type="number" id="adults" name="adults">
+                    </label>
+                  </li>
+                </ul>
+              </ul>
+              <button class="modal-form-search"type="submit">
+                <a href="#" class="modal-form-search-link">Найти</a>
+              </button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
