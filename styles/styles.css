@@ -454,7 +454,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  margin: 40px auto auto 71px;
+  margin: 38px auto auto 71px;
 }
 
 .catalog-filter-group {
@@ -590,7 +590,7 @@ ul {
 
 
 .search-header h2 {
-  margin:0;
+  margin:3px auto auto 2px;
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
@@ -882,15 +882,23 @@ product-price {
   color:#000000;
 }
 
+.items-on-page {
+  margin-top: 4px;
+}
+
 .items-on-page label {
-  margin-right:51px;
+  margin-right:48px;
+  margin-top: 6px;
   font-size: 18px;
   line-height: 23px;
 }
 
 .cards-on-page-control {
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
   width: 160px;
   height:48px;
+  padding: 10px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -1326,10 +1334,15 @@ input[type="email"]:invalid {
 }
 
 .select-control {
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   width: 287px;
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  padding: 3px 10px 7px 13px;
 }
 
 .select-control:hover {
@@ -1506,7 +1519,80 @@ input[type="email"]:invalid {
 
   .modal-form-item {
     list-style-type: none;
-    margin-bottom: 38px;
+    margin-bottom: 12px;
+  }
+
+  .form-input-top {
+    width: 420px;
+  }
+
+  .input-approval {
+    display: inline-block;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 155px;
+  }
+
+  .input-error {
+    display: inline-block;
+    margin-left: 155px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FF5757;
+  }
+
+  .calendar {
+    position: absolute;
+    left: 541px;
+    top:18px;
+    background-image: url(../images/calendar.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+
+  .plus {
+    position: absolute;
+    left: 256px;
+    top: 18px;
+    background-image: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+  }
+
+  .minus {
+    position: absolute;
+    left: 174px;
+    top: 24px;
+    background-image: url(../images/minus.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+  }
+
+  .modal-form-check-right .plus {
+    position: absolute;
+    left: 198px;
+    top: 18px;
+    background-image: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+  }
+
+  .modal-form-check-right .minus {
+    position: absolute;
+    left: 116px;
+    top: 24px;
+    background-image: url(../images/minus.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
   }
 
   .form-input {
@@ -1514,19 +1600,67 @@ input[type="email"]:invalid {
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
-    padding:5px 0 5px 0;
+    padding:5px 0 5px 19px;
     background-color:#F2F2F2;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-
-  .form-input-top {
-    width: 420px;
+    box-sizing: border-box;
   }
 
   .form-input-bottom {
     width:133px;
+    padding-left:62px;
+    padding-top:7px;
+  }
+
+  .modal-form-check .information {
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #83B3D3;
+    border-radius: 50%;
+    padding-top: 0;
+    margin-top: 13px;
+    margin-right: 11px;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  a.tooltip .bubble {
+    display: none; 
+    margin-top: 40px; 
+    margin-left: -115px;
+    width: 256px;
+    height: 143px;
+  }
+
+  a.tooltip:hover .bubble-arrow {
+    margin-top: 35px; 
+    margin-left: 5px;
+    display: inline-block; 
+    position: absolute;
+    width: 13px;
+    height:13px;
+    background: #333333;
+    transform: rotate(45deg);
+  }
+
+  a.tooltip:hover .bubble {
+    display: inline; 
+    position: absolute; 
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 18px 18px 22px;
+    background: #333333;
+    border: 1px solid #cccccc; 
+    color: #ffffff;
+    border-radius: 10px;
   }
 
   .modal-form-guest .modal-form-item:first-child  {
@@ -1539,6 +1673,7 @@ input[type="email"]:invalid {
 
   .modal-form-check {
     display: flex;
+    position: relative;
     justify-content: space-between;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -1546,14 +1681,10 @@ input[type="email"]:invalid {
     line-height: 40px;
   }
 
-  .modal-form-check span {
-    padding-top: 4px;
-  }
-
   .modal-form-guest {
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 15px;
   }
 
   .modal-form-search {
@@ -1563,7 +1694,7 @@ input[type="email"]:invalid {
     line-height: 40px;
     width: 575px;
     padding: 10px 100px 10px 100px;
-    margin: auto;
+    margin: 27px auto auto auto;
     cursor: pointer;
     background-color: #83B3D3;
     border: none;
@@ -1574,6 +1705,20 @@ input[type="email"]:invalid {
     text-decoration: none;
     color:#FFFFFF;
     text-transform: uppercase;
+  }
+
+  .modal-form-sign {
+     margin-top: 5px;
+  }
+
+  .star {
+    background-image: url(../images/star.svg);
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:10px 10px 20px 10px;
+    margin-right: 5px;
   }
 
 .visually-hidden {
