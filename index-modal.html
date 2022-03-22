@@ -11,9 +11,15 @@
       <nav class="main-navigation">
         <a href="#" class="logo"><img src="images/header-logo.png" width="139" height="70" alt="Логотип сайта"></a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="index.html">Главная</a></li>
-          <li class="navigation-item"><a href="#about-product">О Седоне</a></li>
-          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item">
+            <a class="current-navigation-item" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#about-product">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
         <ul class="user-navigation">
           <li class="navigation-item">
@@ -41,7 +47,7 @@
       <section class="welcome-title">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
         <div class="welcome-lettering"></div>
-        <h2 class="title"><a id="about-product">Седона — небольшой городок в Аризоне, заслуживающий большего!</a></h2>
+        <h2 class="title"><a name="about-product">Седона — небольшой городок в Аризоне, заслуживающий большего!</a></h2>
         <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages-section">
@@ -111,7 +117,7 @@
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label><input type="email" name="email" placeholder="Ваш email"></label>
+          <label><input type="email" name="email" placeholder="Ваш e-mail"></label>
           <button class="button button-email" type="submit">Подписаться</button>
         </form>
       </section>
@@ -129,7 +135,7 @@
         <li class="social-item">
           <a class="social-link social-facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social-icon" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+            <svg class="social-icon"width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
             </svg>
           </a>
@@ -147,7 +153,7 @@
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <div class="logo-wrapper">
-        <a class="academy-logo" href="https://htmlacademy.ru/">
+        <a class="academy-logo href="https://htmlacademy.ru/">
           <svg class="logo-svg" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
             <path d="M11.6 4.5C9.99999 4.5 8.79999 5.2 7.99999 6.2H7.89999V0H5.89999V15.5H7.89999V10.2C7.89999 8.1 9.19999 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
@@ -193,7 +199,7 @@
                   </label>
                   <span class="input-approval">На эти даты есть свободные номера. Пока есть.</span>
                 </li>
-                <li>
+                <li class="modal-form-item">
                   <ul class="modal-form-guest">
                     <li class="modal-form-item">
                       <label class="modal-form-check">

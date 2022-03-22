@@ -92,8 +92,8 @@ ul {
   text-align: left;
   color: #000000;
   text-decoration: none;
-  border-bottom: solid 3px #756257;
 }
+
 
 .navigation-item a:hover {
   color: #756257;
@@ -103,15 +103,18 @@ ul {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.user-navigation .navigation-item:first-child {
-  margin-right: 22px;
-  margin-top:3px;
+.user-navigation .navigation-item:not(:last-child) {
+  position: absolute;
+  top: 20px;
 }
 
 .user-navigation .navigation-item:nth-last-child(2) {
-  margin-right: 32px;
-    margin-top: 3px;
-    height: 48px;
+  right: 193px;
+}
+
+.user-navigation .navigation-item:first-child {
+  right: 233px;
+  top: 21px;
 }
 
 .navigation-icon:hover {
@@ -125,9 +128,9 @@ ul {
 .likes {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   align-items: center;
-  top: 15px;
+  bottom: 26px;
   left: 13px;
   width: 20px;
   height: 20px;
@@ -157,6 +160,7 @@ ul {
 
 .user-navigation {
   display:flex;
+  position: relative;
   max-width: 310px;
   margin: 0;
   margin-left:auto;
@@ -188,6 +192,10 @@ ul {
 .navigation-item .application:active {
   background-color: #615048;
   color:rgba(255, 255, 255, 0.3)
+}
+
+.current-navigation-item {
+  border-bottom: solid 3px #756257;
 }
 
 .application:focus {
@@ -465,8 +473,12 @@ ul {
 .catalog-filter-group {
   margin: 0;
   padding:0;
-  padding-right:20px;
   border:none;
+  max-width: 160px;
+}
+
+.catalog-filter-group:not(:last-child) {
+  padding-right: 68px;
 }
 
 .range {
@@ -568,10 +580,6 @@ ul {
     border-radius: 0 4px 4px 0;
     width: 144px;
   }
-
-.catalog-filter-group:not(:last-child) {
-  margin-right: 68px;
-}
 
 .catalog-filter-list {
   margin-top: 30px;
@@ -1442,12 +1450,12 @@ input[type="email"]:invalid {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="checkbox"] + .control-mark:focus {
+.control-input[type="checkbox"]:focus + .control-mark {
   box-shadow: 0 0 0 4px #83B3D3;
   outline: none;
 }
 
-.control-input[type="radio"] + .control-mark:focus {
+.control-input[type="radio"]:focus + .control-mark {
   box-shadow: 0 0 0 4px #83B3D3;
   outline: none;
 }
@@ -1534,6 +1542,10 @@ input[type="email"]:invalid {
   .modal-form-item {
     list-style-type: none;
     margin-bottom: 12px;
+  }
+
+  .modal-form-guest .modal-form-item {
+  list-style-type: none;
   }
 
   .form-input-top {
@@ -1693,6 +1705,7 @@ input[type="email"]:invalid {
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
+    list-style-type: none;
   }
 
   .modal-form-guest {
