@@ -1742,6 +1742,10 @@ input[type="email"]:invalid {
     margin-top: 15px;
   }
 
+  .modal-form-list {
+    margin-bottom: 25px;
+  }
+
   .modal-form-search {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -1754,13 +1758,17 @@ input[type="email"]:invalid {
     background-color: #83B3D3;
     border: none;
     border-radius: 10px;
-  }
-
-  .modal-form-search-link {
+    box-sizing: border-box;
     text-decoration: none;
     color:#FFFFFF;
     text-transform: uppercase;
   }
+
+  /*.modal-form-search-link {
+    text-decoration: none;
+    color:#FFFFFF;
+    text-transform: uppercase;
+  }*/
 
   .modal-form-sign {
      margin-top: 5px;
