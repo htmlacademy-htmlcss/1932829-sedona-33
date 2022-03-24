@@ -283,6 +283,9 @@ body {
   width: 250px;
   margin: 20px auto;
 }
+.line {
+  margin: 0;
+}
 
 .advantages-list, .advantages-items {
   margin: 0px;
@@ -563,7 +566,7 @@ body {
   }
   
 .range-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
   background: transparent;
@@ -689,7 +692,7 @@ body {
   line-height: 23px;
 }
 
-product-price {
+.product-price {
   font-size: 18px;
   line-height: 23px;
 }
@@ -777,7 +780,7 @@ product-price {
 
 .favourites {
   width: 141px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -830,7 +833,7 @@ product-price {
   display:block;
   width: 620px;
   height: 60px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1350,7 +1353,7 @@ input[type="email"]:invalid {
 
 .button-field .button {
   margin-bottom:7px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .search-header {
