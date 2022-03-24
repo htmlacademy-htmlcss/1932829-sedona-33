@@ -1749,7 +1749,7 @@ input[type="email"]:invalid {
   line-height: 40px;
   width: 575px;
   padding: 10px 100px 10px 100px;
-  margin: 14px auto auto auto;
+  margin: auto;
   cursor: pointer;
   background-color: #83B3D3;
   border: none;
