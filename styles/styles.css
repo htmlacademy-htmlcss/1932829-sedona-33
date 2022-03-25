@@ -513,6 +513,8 @@ body {
 }
 
 .range-bar {
+  left: 0px; 
+  width: 227px;
   position: absolute;
   height: 4px;
   background-color: #ffffff;
